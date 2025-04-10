@@ -6,13 +6,14 @@
 }
 body {
   font-family: "Raleway-Bold", sans-serif;
+  width: 1100px;
+  height: 3028px;
 }
 
 header {
   display: flex;
   width: 1100px;
   height: 293px;
-  border: 1px solid black;
 }
 .header__menu {
   width: 391.48px;
@@ -33,12 +34,30 @@ header {
   list-style-type: circle;
 }
 
-li {
+.header__links-list_1 {
   font-size: 18px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  z-index: 1;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
-a {
+.header__links-list {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  z-index: 1;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  text-underline-offset: 4px;
+}
+
+.header__links-list-item {
   display: flex;
   z-index: 1;
   align-content: center;
@@ -53,7 +72,7 @@ a {
   padding: 0 60px;
 }
 
-address {
+.header__address {
   display: grid;
   width: 240px;
   margin-left: 100px;
@@ -63,4 +82,75 @@ address {
   justify-self: center;
   list-style-type: none;
   font-size: 18px;
+}
+
+.address__links {
+  color: black;
+  font-size: 18px;
+}
+
+.cover {
+  display: grid;
+  width: 1100px;
+  height: 757px;
+}
+.cover_item {
+  position: absolute;
+  z-index: -1;
+  width: 1100px;
+  height: 757px;
+}
+.overlay {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 1100px;
+  height: 757px;
+}
+.cover__title {
+  width: 1000px;
+  height: 385px;
+  margin: 0 auto;
+  color: white;
+}
+.aligned-text {
+  font-size: 100px;
+  justify-self: start;
+  gap: 100px 100px;
+  letter-spacing: 25px;
+}
+.aligned-text_center {
+  justify-self: center;
+  font-size: 100px;
+  letter-spacing: 25px;
+}
+
+.aligned-text_right {
+  justify-self: right;
+  font-size: 100px;
+  letter-spacing: 25px;
+}
+
+.cover__description {
+  position: relative;
+  display: flex;
+  width: 1000px;
+  height: 51px;
+  color: white;
+  margin: 0 auto;
+  top: 115px;
+  font-size: 20px;
+  column-gap: 160px;
+}
+.cover__description-text {
+  word-spacing: 20px;
+}
+
+.bet-button {
+  font-size: 20px;
+  padding: 10px 30px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
 }

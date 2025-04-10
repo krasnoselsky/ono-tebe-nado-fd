@@ -5,28 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
     <header>
       <nav class="header__menu">
         <ul class="header-list">
-          <li style="text-decoration: none; list-style-type: none">главная</li>
-          <li>посмотреть лоты</li>
-          <li>об аукционе</li>
+          <a class="header__links-list_1" href="#">
+            <li style="list-style-type: none">главная</li></a
+          >
+
+          <a class="header__links-list" href="#"> <li>посмотреть лоты</li></a>
+
+          <a class="header__links-list" href="#"> <li>об аукционе</li></a>
         </ul>
       </nav>
 
-      <a><img class="logo-black" src="images/logo-black.svg" alt="" /></a>
+      <a class="header__links-list-item">
+        <img class="logo-black" src="images/logo-black.svg" alt=""
+      /></a>
 
-      <address>
-        <li>+9 999 555 5555</li>
-        <li>info@sobaka.ge</li>
+      <address class="header__address">
+        <a class="address__links" href="tel:+9 999 555 5555">
+          <li>+9 999 555 5555</li></a
+        >
+
+        <a class="address__links" href="mailto:info@sobaka.ge">
+          <li>info@sobaka.ge</li></a
+        >
+
         <li style="text-decoration: none; list-style-type: none">
-          наб. Принсенграхт 263- <br>265, Амстердам
+          наб. Принсенграхт 263- <br />265, Амстердам
         </li>
       </address>
     </header>
+
+    <main>
+      <section class="cover">
+        <img class="cover_item" src="images/cover.jpg" />
+        <div class="overlay"></div>
+        <div class="cover__title">
+          <h1 class="aligned-text">ОНО</h1>
+          <h1 class="aligned-text_center">ТЕБЕ</h1>
+          <h1 class="aligned-text_right">НАДО</h1>
+        </div>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ
+          </p>
+          <button class="bet-button" type="button">СДЕЛАТЬ СТАВКУ</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
