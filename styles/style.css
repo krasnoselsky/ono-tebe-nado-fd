@@ -192,8 +192,8 @@ main {
 .lots__heading {
   font-weight: bold;
   font-size: 40px;
-  padding-left: 45px;
-  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-bottom: 30px;
   text-transform: uppercase;
   
 }
@@ -205,7 +205,7 @@ main {
   list-style-type: none; 
   background-size: cover;
   justify-content: space-between;
-  min-height: 546px;
+  max-height: 596px;
   
   
 }
@@ -316,7 +316,7 @@ main {
   width: 1052px;
   margin: 0 auto;
   display: flex;
-  column-gap: 80px;
+  column-gap: 70px;
 }
 
 .about__logo {
@@ -344,12 +344,13 @@ main {
   text-transform: uppercase;
   font-size: 40px;
   align-content: end;
+  
 }
 
 .about__text {
   width: 665px;
   font-size: 20px;
-  padding: 30px 0;
+  margin: 100px 0;
 }
 
 footer {
